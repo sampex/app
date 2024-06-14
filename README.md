@@ -22,23 +22,17 @@ This project is a Flask web application that uses a finetuned language model to 
 ### Steps
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
-    ```
+
 
 2. Create and activate a virtual environment:
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
+
 
 3. Install the required packages:
     ```sh
     pip install -r requirements.txt
     ```
 
-5. Ensure you have a GPU available for use of cuda
+4. Ensure you have a GPU available for use of cuda
 
 ## Usage
 
