@@ -38,11 +38,6 @@ This project is a Flask web application that uses a finetuned language model to 
     pip install -r requirements.txt
     ```
 
-4. Install additional dependencies:
-    ```sh
-    pip install torch peft transformers
-    ```
-
 5. Ensure you have a GPU available for model inference
 
 ## Usage
