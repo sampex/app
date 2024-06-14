@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Generation Demo</title>
+    <script>
+        // Function to handle speech recognition
+        function startSpeechRecognition() {
+            // Check if SpeechRecognition is available
+            if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+                // Create a new instance of SpeechRecognition
+                const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+                
+                // Set recognition properties if needed
+                // recognition.lang = 'en-US'; // Set recognition language if needed
+                
+                // Handle recognition result
+                recognition.onresult = function(event) {
+                    const transcript = event.results[0][0].transcript;
+                    document.getElementById('text').value = transcript;
+                };
+
+                // Start recognition
+                recognition.start();
+            } else {
+                alert('Speech recognition not supported in your browser. Please use a modern browser.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter symptoms</h2>
+    <form action="/predict" method="post">
+        <textarea id="text" name="text" rows="4" cols="50"></textarea><br><br>
+        <button type="button" onclick="startSpeechRecognition()">Start Voice Input</button>
+        <button type="submit">Generate treatment plan</button>
+    </form>
+</body>
+</html>
