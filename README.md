@@ -1,6 +1,6 @@
 # Medical Assistant Text Generator
 
-This project is a Flask web application that uses a pretrained language model to generate possible diagnoses and treatment plans based on user-inputted symptoms. The application provides a web interface where users can enter symptoms either by typing or using voice input.
+This project is a Flask web application that uses a finetuned language model to generate possible diagnoses and treatment plans based on user-inputted symptoms. The application provides a web interface where users can enter symptoms either by typing or using voice input.
 
 ## Table of Contents
 
