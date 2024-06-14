@@ -8,23 +8,16 @@ This project is a Flask web application that uses a pretrained language model to
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
 - Web interface for inputting symptoms
-- Voice input support using Speech Recognition API
-- Text generation using a pretrained language model
+- Voice input support using Speech Recognition
+- Text generation using a finetuned language model
 - Display generated diagnosis and treatment plans
 
 ## Installation
 
-### Prerequisites
-
-- Python 3.6 or higher
-- `pip` (Python package installer)
-- `virtualenv` (recommended)
 
 ### Steps
 
@@ -50,7 +43,7 @@ This project is a Flask web application that uses a pretrained language model to
     pip install torch peft transformers
     ```
 
-5. Ensure you have a GPU available for model inference, or adjust the code to run on CPU if necessary.
+5. Ensure you have a GPU available for model inference
 
 ## Usage
 
@@ -73,12 +66,4 @@ This project is a Flask web application that uses a pretrained language model to
 - `templates/`: Directory containing HTML templates.
   - `index.html`: The home page where users input symptoms.
   - `result.html`: The page where the generated treatment plan is displayed.
-- `static/`: Directory for static files (e.g., CSS, JavaScript).
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
