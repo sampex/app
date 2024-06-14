@@ -38,7 +38,7 @@ This project is a Flask web application that uses a finetuned language model to 
     pip install -r requirements.txt
     ```
 
-5. Ensure you have a GPU available for model inference
+5. Ensure you have a GPU available for use of cuda
 
 ## Usage
 
